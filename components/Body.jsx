@@ -146,7 +146,7 @@ const Body = () => {
             <PortfolioItem
             imgUrl="/images/schadmusic.PNG"
             title="SchadMusic"
-            projectLink={"http://www.schadmusic.vercel.app"}
+            projectLink={"http://schadmusic.vercel.app"}
             description={
               "This is a website to explore music all around the world using shazam core api and many more technology"
             }
