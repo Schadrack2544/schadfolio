@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Body, Navbar, Footer } from '../components'
+import "@fontsource/poppins";
 
 const Home: NextPage = () => {
   return (
