@@ -121,7 +121,7 @@ const Body = () => {
           <PortfolioItem
             imgUrl="/images/ibirori.png"
             title="ibirori.rw"
-            projectLink="http://ibirori.vercel.app"
+            projectLink="https://ibirori.vercel.app"
             description={
               "This is the system which helps to organize  different parties people might have. Those parties can be wedding ,meetings, anniversaries,baby and bridal shower"
             }
@@ -130,7 +130,7 @@ const Body = () => {
           <PortfolioItem
             imgUrl="/images/schadtv.png"
             title="Schadtv"
-            projectLink={"http://schadtv.vercel.app"}
+            projectLink={"https://schadtv.vercel.app"}
             description={
               "schadtv is the online video streaming service which uses the video api similar to that of Youtube to give whatever video you want on the globe."
             }
@@ -138,7 +138,7 @@ const Body = () => {
           <PortfolioItem
             imgUrl="/images/roxanne.png"
             title="Psychology clinic"
-            projectLink={"http://www.robitaille-clinic.epizy.com"}
+            projectLink={"https://www.robitaille-clinic.epizy.com"}
             description={
               "This is a website for a psychology therapist doctor to help her clients to find her services very easily."
             }
@@ -146,7 +146,7 @@ const Body = () => {
             <PortfolioItem
             imgUrl="/images/schadmusic.PNG"
             title="SchadMusic"
-            projectLink={"http://schadmusic.vercel.app"}
+            projectLink={"https://schadmusic.vercel.app"}
             description={
               "This is a website to explore music all around the world using shazam core api and many more technology"
             }
