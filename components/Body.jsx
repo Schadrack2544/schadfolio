@@ -256,7 +256,7 @@ const Body = () => {
             </div>
           </div>
           <div className="contact-form flex-1">
-            <h3 className="sm:text-[28px]">Ask me anything</h3>
+            <h3 className="sm:text-[28px]">Send me message here</h3>
             <form
               action=""
               method="post"
