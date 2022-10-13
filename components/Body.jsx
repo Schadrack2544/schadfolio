@@ -143,6 +143,14 @@ const Body = () => {
               "This is a website for a psychology therapist doctor to help her clients to find her services very easily."
             }
           />
+            <PortfolioItem
+            imgUrl="/images/schadmusic.png"
+            title="SchadMusic"
+            projectLink={"http://www.schadmusic.vercel.app"}
+            description={
+              "This is a website to explore music all around the world using shazam core api and many more technology"
+            }
+          />
           <PortfolioItem
             imgUrl="/images/mobiresto.png"
             title="Mobile  restaurant"
