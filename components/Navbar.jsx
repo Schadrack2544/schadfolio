@@ -24,10 +24,10 @@ const Navbar = () => {
             <div className="logo flex-1">
                 <span className='flex justify-between w-full items-center'>
                 <Link href="/"><a className="text-[24px]">schadfolio</a></Link>
-             {openMenu?   <FaBars className='text-[20px] sm:hidden' onClick={()=>{
+             {openMenu?   <FaTimes className='text-[20px] sm:hidden' onClick={()=>{
                     setShowMenu(prev=>!prev);
                     setOpenMenu(false)
-                }}/>:  <FaTimes className='text-[20px] sm:hidden' onClick={()=>{
+                }}/>:  <FaBars className='text-[20px] sm:hidden' onClick={()=>{
                     setShowMenu(prev=>!prev);
                     setOpenMenu(true)
                 }}/>}
