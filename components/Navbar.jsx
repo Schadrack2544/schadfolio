@@ -9,6 +9,7 @@ const Navbar = () => {
     const handleSize=()=>{
       if(window.innerWidth<640){
         setIsMobile(true);
+        setShowMenu(false);
       }
       else{
         setIsMobile(false);
