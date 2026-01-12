@@ -135,28 +135,12 @@ const Body = () => {
               "schadtv is the online video streaming service which uses the video api similar to that of Youtube to give whatever video you want on the globe."
             }
           />
-          <PortfolioItem
-            imgUrl="/images/roxanne.png"
-            title="Psychology clinic"
-            projectLink={"https://www.robitaille-clinic.epizy.com"}
-            description={
-              "This is a website for a psychology therapist doctor to help her clients to find her services very easily."
-            }
-          />
             <PortfolioItem
             imgUrl="/images/schadmusic.PNG"
             title="SchadMusic"
             projectLink={"https://schadmusic.vercel.app"}
             description={
               "This is a website to explore music all around the world using shazam core api and many more technology"
-            }
-          />
-          <PortfolioItem
-            imgUrl="/images/mobiresto.png"
-            title="Mobile  restaurant"
-            projectLink={"http://mobiresto.herokuapp.com"}
-            description={
-              "The ideal online restaurant service to help the client find our services very easily,like tarrifs,orders and etc..."
             }
           />
         </div>
@@ -177,7 +161,7 @@ const Body = () => {
           <StackItem stackUrl={"/images/nodejslogo.png"} title="nodejs" />
           <StackItem stackUrl={"/images/reactlogo.png"} title="React" />
 
-          <StackItem stackUrl={"/images/angular.png"} title="AngularJS" />
+          {/* <StackItem stackUrl={"/images/angular.png"} title="AngularJS" /> */}
           <StackItem stackUrl={"/images/nextjslogo.png"} title="NextJS" />
           <StackItem stackUrl={"/images/htmllogo.png"} title="html" />
 
