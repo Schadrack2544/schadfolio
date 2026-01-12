@@ -1,5 +1,5 @@
 import React from "react";
-import { PortfolioItem, StackItem } from "../components";
+import { PortfolioItem } from "../components";
 import Typical from "react-typical";
 import * as Fa from "react-icons/fa";
 import Image from "next/image";
@@ -29,7 +29,7 @@ const Body = () => {
   return (
     <div className=" bg-[#111] flex flex-col gap-2.5  sm:px-5 px-2 w-full sm:mx-auto sm:inset-0">
       <div className="intro flex items-center   sm:h-auto  w-full sm:mx-auto">
-        <div className="flex-1 intro-back sm:h-[100vh] relative hidden lg:flex  self-center">
+        <div className="flex-1 intro-back sm:h-screen relative hidden lg:flex  self-center">
           <div className="relative inset-0 bg-[#111] text-white opacity-40 h-screen w-full self-center">
             <Image
               src={"/images/Schad.png"}
@@ -43,8 +43,8 @@ const Body = () => {
             />
           </div>
         </div>
-        <div className="flex-1 flex flex-col sm:pr-[60px] w-full h-screen items-center justify-center">
-          <h1 className="text-[24px] sm:text-[36px] font-[600] pb-5 text-center sm:text-left">
+        <div className="flex-1 flex flex-col sm:pr-15 w-full h-screen items-center justify-center">
+          <h1 className="text-[24px] sm:text-[36px] font-semibold pb-5 text-center sm:text-left">
             Hello my name is
             <br /> Schadrack{" "}
             <span className="text-red-600 text-[24px] sm:text-[36px]">
@@ -66,7 +66,7 @@ const Body = () => {
       </div>
       <div
         id="about"
-        className="flex justify-between items-center bg-[#000] sm:h-auto"
+        className="flex justify-between items-center bg-black sm:h-auto"
       >
         <div className="aboutme flex flex-col  flex-1 w-screen sm:w-auto">
           <h1 className=" text-[28px] sm:text-[32px] text-center ">About me</h1>
@@ -89,7 +89,7 @@ const Body = () => {
             </ul>
             <div className="flex justify-start gap-5">
               <button
-                className="bg-red-600 p-2 ml-5 w-[80px] rounded-[8px]"
+                className="bg-red-600 p-2 ml-5 w-20 rounded-lg"
                 onClick={() => {
                   Router.push("https://schadfolio.vercel.app/#contact");
                 }}
@@ -97,7 +97,7 @@ const Body = () => {
                 Hire me
               </button>
               <button
-                className="bg-red-600 p-2 ml-5 w-[auto] rounded-[8px]"
+                className="bg-red-600 p-2 ml-5 w-auto rounded-lg"
                 onClick={() => {
                   Router.push("/documents/Schadrack_CV.pdf");
                 }}
@@ -107,7 +107,7 @@ const Body = () => {
             </div>
           </div>
         </div>
-        <div className="another-profile h-[100vh] hidden sm:flex flex-1  relative">
+        <div className="another-profile h-screen hidden sm:flex flex-1  relative">
           <div className="absolute  top-0 left-0 right-0 bottom-0 bg-black opacity-40"></div>
         </div>
       </div>
@@ -135,7 +135,7 @@ const Body = () => {
               "schadtv is the online video streaming service which uses the video api similar to that of Youtube to give whatever video you want on the globe."
             }
           />
-            <PortfolioItem
+          <PortfolioItem
             imgUrl="/images/schadmusic.PNG"
             title="SchadMusic"
             projectLink={"https://schadmusic.vercel.app"}
@@ -146,47 +146,37 @@ const Body = () => {
         </div>
       </div>
 
-      <div
-        id="mystacks"
-        className="mystacks flex flex-col gap-5 h-auto  sm:h-auto  flex-wrap w-full sm:flex-row"
-      >
-        <h1 className="text-[30px] text-center  bg-[#111] w-full">My Stacks</h1>
-        <div className="stack-items flex-col sm:flex-row flex gap-2 flex-wrap bg-[#fff] pt-5">
-          <StackItem stackUrl={"/images/htmllogo.png"} title="html" />
-          <StackItem stackUrl={"/images/csslogo.png"} title="css" />
-          <StackItem
-            stackUrl={"/images/javascriptlogo.png"}
-            title="Javascript"
-          />
-          <StackItem stackUrl={"/images/nodejslogo.png"} title="nodejs" />
-          <StackItem stackUrl={"/images/reactlogo.png"} title="React" />
-
-          {/* <StackItem stackUrl={"/images/angular.png"} title="AngularJS" /> */}
-          <StackItem stackUrl={"/images/nextjslogo.png"} title="NextJS" />
-          <StackItem stackUrl={"/images/htmllogo.png"} title="html" />
-
-          <StackItem stackUrl={"/images/djangologo.png"} title="Django" />
-          <StackItem
-            stackUrl={"/images/react-nativelogo.png"}
-            title="React-Native"
-          />
-          <StackItem stackUrl={"/images/flutterlogo.png"} title="Flutter" />
-          <StackItem stackUrl={"/images/wordpress.png"} title="Wordpress" />
-        </div>
+      <div id="mystacks" className="mystacks flex flex-col gap-5 bg-[#111] p-5">
+        <h2 className="text-[30px] text-center text-white">
+          My Technical Skills
+        </h2>
+        <ul className="flex flex-wrap gap-2 sm:gap-5 text-white text-[18px] sm:text-[20px] list-disc list-inside">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Django</li>
+          <li>React Native</li>
+          <li>Flutter</li>
+          <li>WordPress</li>
+        </ul>
       </div>
       <div
         id="contact"
-        className="contact flex flex-col sm:h-auto bg-[#000] sm:w-full"
+        className="contact flex flex-col sm:h-auto bg-black sm:w-full"
       >
         <h3 className="text-[36px] text-center uppercase">Contact me</h3>
         <div className="contact  flex flex-col items-center xl:flex-row gap-5 p-5">
           <div className="flex flex-col gap-2.5 flex-1 items-center self-center">
-            <div className="h-[200px] w-[200px] flex justify-center self-center relative">
+            <div className="h-50 w-50 flex justify-center self-center relative">
               <img
                 src="/images/Schad.png"
                 alt="Schadrack"
-                layout="cover"
-                className="object-cover rounded-[50%] border-[3px] border-[#123] absolute"
+                //layout="cover"
+                className="object-cover w-45 h-45 rounded-[50%] border-[3px] border-[#123] absolute"
               />
             </div>
             <div>
@@ -244,7 +234,7 @@ const Body = () => {
             <form
               action=""
               method="post"
-              className="flex flex-col gap-5 w-full sm:w-[600px]"
+              className="flex flex-col gap-5 w-full sm:w-150"
               onSubmit={sendEmail}
             >
               <input
@@ -252,10 +242,22 @@ const Body = () => {
                 name="fullname"
                 placeholder="Fullname"
                 id="fullname"
-                className="text-black"
+                className="text-black bg-white"
               />
-              <input type="email" name="email" placeholder="email" id="email"  className="text-black"/>
-              <input type="phone" name="phone" placeholder="Phone" id="phone"  className="text-black"/>
+              <input
+                type="email"
+                name="email"
+                placeholder="email"
+                id="email"
+                className="text-black bg-white"
+              />
+              <input
+                type="phone"
+                name="phone"
+                placeholder="Phone"
+                id="phone"
+                className="text-black bg-white"
+              />
 
               <textarea
                 name="message"
@@ -263,12 +265,12 @@ const Body = () => {
                 cols="30"
                 rows="8"
                 placeholder="Ask me"
-                className="text-black"
+                className="text-black bg-white"
               ></textarea>
 
               <button
                 type="submit"
-                className="bg-red-600 text-white w-[200px] p-2 rounded-[12px]"
+                className="bg-red-600 text-white w-50 p-2 rounded-xl"
               >
                 Send Your message
               </button>
