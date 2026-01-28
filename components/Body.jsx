@@ -119,7 +119,7 @@ const Body = () => {
         <h3 className="text-center text-[30px]"> My portfolio</h3>
         <div className="portfolio-items flex flex-col xl:flex-row">
           <PortfolioItem
-            imgUrl="/images/ibirori.png"
+            imgUrl="/images/profile-items/ibirori.png"
             title="ibirori.rw"
             projectLink="https://ibirori.vercel.app"
             description={
@@ -128,7 +128,7 @@ const Body = () => {
           />
 
           <PortfolioItem
-            imgUrl="/images/schadtv.png"
+            imgUrl="/images/profile-items/schadtv.png"
             title="Schadtv"
             projectLink={"https://schadtv.vercel.app"}
             description={
@@ -136,11 +136,36 @@ const Body = () => {
             }
           />
           <PortfolioItem
-            imgUrl="/images/schadmusic.PNG"
+            imgUrl="/images/profile-items/schadmusic.PNG"
             title="SchadMusic"
             projectLink={"https://schadmusic.vercel.app"}
             description={
               "This is a website to explore music all around the world using shazam core api and many more technology"
+            }
+          />
+           <PortfolioItem
+            imgUrl="/images/profile-items/music-pro.png"
+            title="Music Pro"
+            projectLink={"https://my-music-pro.vercel.app/"}
+            description={
+              "Transform your voice into professional songs with AI-powered beats, melody, and mastering"
+            }
+          />
+
+          <PortfolioItem
+            imgUrl="/images/profile-items/sava-store.png"
+            title="Sava Store"
+            projectLink={"https://savastore.rw/"}
+            description={
+              "Find the perfect devices for your lifestyle from our curated collection of smartphones, laptops, tablets, and accessories."
+            }
+          />
+           <PortfolioItem
+            imgUrl="/images/profile-items/ironji-website.png"
+            title="Ironji website"
+            projectLink={"https://ironji.com/"}
+            description={
+              "Rwanda's premier logistics company, providing reliable and efficient transport solutions nationwide."
             }
           />
         </div>
@@ -267,7 +292,7 @@ const Body = () => {
                 placeholder="Ask me"
                 className="text-black bg-white"
               ></textarea>
-
+              
               <button
                 type="submit"
                 className="bg-red-600 text-white w-50 p-2 rounded-xl"

@@ -5,7 +5,7 @@ import "@fontsource/poppins";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col bg-[#000] text-white relative">
+    <div className="flex flex-col bg-black text-white relative">
       <Head>
         <title>Schadfolio</title>
         <link rel="icon" href="/favicon.ico"/>
